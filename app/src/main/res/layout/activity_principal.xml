@@ -28,13 +28,11 @@
         android:layout_height="0dp"
         android:text="HOLA"
         tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-=======
+        tools:layout_editor_absoluteY="132dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/principal" />
->>>>>>> origin/Kevin/InterfazPrincipal
+
 </android.support.constraint.ConstraintLayout>
