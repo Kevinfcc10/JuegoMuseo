@@ -18,7 +18,6 @@
         android:background="@android:color/holo_orange_dark"
         android:onClick="goLogin"
         app:layout_constraintBottom_toBottomOf="parent"
-<<<<<<< HEAD
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
