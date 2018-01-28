@@ -13,12 +13,15 @@ public class Principal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
     }
 
-    public void goLogin(View view) {
-        Intent intent = new Intent(this, Login.class);
+    public void goInformacion(View view) {
+        Intent intent = new Intent(this, Informacion.class);
         startActivity(intent);
     }
 
-
+    /*public void goLogin(View view) {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+    }*/
 
 
 }

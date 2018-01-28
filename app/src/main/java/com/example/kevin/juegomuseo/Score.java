@@ -3,7 +3,7 @@ package com.example.kevin.juegomuseo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Niveles extends AppCompatActivity {
+public class Score extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
