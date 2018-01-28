@@ -13,7 +13,7 @@ import java.util.TimerTask;
 
 public class Principal extends AppCompatActivity {
 
-    private static final long SPLASH_SCREEN_DELAY = 3000;
+    private static final long SPLASH_SCREEN_DELAY = 8000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class Principal extends AppCompatActivity {
         };
         Timer timer = new Timer();
         timer.schedule(task, SPLASH_SCREEN_DELAY);
+
+
     }
-
 }
-

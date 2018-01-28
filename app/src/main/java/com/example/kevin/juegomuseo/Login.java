@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Toast;
+
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
