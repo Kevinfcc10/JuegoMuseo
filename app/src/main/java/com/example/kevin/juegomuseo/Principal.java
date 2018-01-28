@@ -14,8 +14,8 @@ public class Principal extends AppCompatActivity {
     }
 
     public void goLogin(View view) {
-       // Intent intent = new Intent(this, Login.class);
-        //startActivity(intent);
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
     }
 
 

@@ -15,9 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" android:label="Login" android:parentActivityName=".Principal">
-            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Principal" />
+        <activity android:name=".Login" android:label="Login">
         </activity>
     </application>
-
 </manifest>
