@@ -3,6 +3,7 @@ package com.example.kevin.juegomuseo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -30,7 +31,7 @@ public class Login extends AppCompatActivity {
             public void onSuccess(LoginResult loginResult) {
 
                 Toast.makeText(Login.this,"Correcto", Toast.LENGTH_SHORT).show();
-                goRegistro();
+                goNivelesFb();
             }
 
             @Override
@@ -44,14 +45,16 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        if (AccessToken.getCurrentAccessToken() != null){
-            goRegistro();
-        }
 
     }
 
-    private void goRegistro(){
-        Intent intent = new Intent(this, Registro.class);
+    public void goNiveles(View view){
+        Intent intent = new Intent(this, Niveles.class);
+        startActivity(intent);
+    }
+
+    public void goNivelesFb(){
+        Intent intent = new Intent(this, Niveles.class);
         startActivity(intent);
     }
 

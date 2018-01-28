@@ -11,30 +11,16 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button3"
         android:layout_alignLeft="@+id/login_button"
         android:layout_alignStart="@+id/login_button"
         android:layout_marginEnd="96dp"
         android:layout_marginStart="96dp"
         android:layout_marginTop="8dp"
+        android:onClick="goNiveles"
         android:text="JUGAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/login_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="96dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="8dp"
-        android:text="REGISTRARSE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -60,7 +46,8 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 </android.support.constraint.ConstraintLayout>
