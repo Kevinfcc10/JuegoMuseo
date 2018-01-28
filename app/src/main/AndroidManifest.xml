@@ -32,9 +32,11 @@
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".Niveles"
-            android:label="Niveles"/>
-        <activity android:name=".Grid_single"></activity>
+        <activity
+            android:name=".Niveles"
+            android:label="Niveles" />
+        <activity android:name=".Grid_single" />
+        <activity android:name=".Informacion"></activity>
     </application>
 
 </manifest>
