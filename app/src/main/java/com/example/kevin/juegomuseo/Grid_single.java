@@ -10,4 +10,9 @@ public class Grid_single extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grid_single);
     }
+
+    public void mensaje(){
+
+    }
+
 }
