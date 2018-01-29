@@ -11,10 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id" />
-        <activity android:name=".Principal" android:label="Principal">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".Principal"
+            android:label="Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,6 +34,7 @@
         <activity android:name=".Grid_single" />
         <activity android:name=".Informacion" android:label="Informacion" android:parentActivityName=".Login"/>
         <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Login" />
+        <activity android:name=".Score"></activity>
     </application>
 
 </manifest>
