@@ -24,17 +24,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" android:label="Jugando con los Animales" />
-        <activity android:name="com.facebook.FacebookActivity"
+        <activity
+            android:name=".Login"
+            android:label="Jugando con los Animales" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".Niveles" android:label="Niveles" android:parentActivityName=".Login" />
-        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Login" />
+        <activity
+            android:name=".Niveles"
+            android:label="Niveles"
+            android:parentActivityName=".Login" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Login" />
+
         <activity android:name=".Grid_single" />
-        <activity android:name=".Informacion" android:label="Informacion" android:parentActivityName=".Login"/>
-        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Login" />
-        <activity android:name=".Score"></activity>
+        <activity
+            android:name=".Informacion"
+            android:label="Informacion"
+            android:parentActivityName=".Login" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Login" />
+
+        <activity android:name=".Score" />
+        <activity android:name=".Nivel1"></activity>
     </application>
 
 </manifest>
