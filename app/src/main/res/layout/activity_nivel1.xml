@@ -18,16 +18,23 @@
         android:id="@+id/paper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/vicuna"
+        android:src="@drawable/tucan3"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
         android:layout_margin="16dp"/>
-
+    <ImageView
+        android:id="@+id/paper2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sahino"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="16dp"/>
     <ImageView
         android:id="@+id/trash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/chimborazo"
+        android:src="@drawable/mataje2"
         android:layout_margin="16dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"/>
