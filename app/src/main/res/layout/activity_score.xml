@@ -15,7 +15,7 @@
         android:layout_marginEnd="126dp"
         android:layout_marginStart="126dp"
         android:layout_marginTop="43dp"
-        android:text="PUNTAJE"
+        android:text=""
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,13 +24,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textViewPuntaje"
         android:layout_width="42dp"
         android:layout_height="32dp"
         android:layout_marginBottom="242dp"
         android:layout_marginEnd="179dp"
         android:layout_marginStart="163dp"
-        android:text="300"
+        android:text=""
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/textView"
         android:layout_width="66dp"
         android:layout_height="25dp"
         android:layout_marginBottom="187dp"
@@ -51,21 +51,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="214dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="69dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="67dp"
-        android:src="@drawable/fb"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPuntaje" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -75,9 +61,23 @@
         android:layout_marginEnd="34dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="7dp"
-        android:src="@drawable/estrellas"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+
+        app:layout_constraintBottom_toTopOf="@+id/textViewPuntaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </android.support.constraint.ConstraintLayout>
