@@ -3,9 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JuegoMuseo.iml" filepath="$PROJECT_DIR$/JuegoMuseo.iml" />
-      <module fileurl="file://C:\Users\Daniela\Documents\SEPTIMO2\Moviles\RepoProyecto\JuegoMuseo\JuegoMuseo.iml" filepath="C:\Users\Daniela\Documents\SEPTIMO2\Moviles\RepoProyecto\JuegoMuseo\JuegoMuseo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Daniela\Documents\SEPTIMO2\Moviles\RepoProyecto\JuegoMuseo\app\app.iml" filepath="C:\Users\Daniela\Documents\SEPTIMO2\Moviles\RepoProyecto\JuegoMuseo\app\app.iml" />
     </modules>
   </component>
 </project>
