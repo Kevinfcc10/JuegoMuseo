@@ -27,7 +27,7 @@ public class Nivel1 extends AppCompatActivity {
         tucan.setTag("sahino");
         mataje = (ImageView) findViewById(R.id.trash);
         mataje.setTag("mataje");
-
+        score=0;
         mataje.setOnDragListener(new TrashDragListener(
                 R.drawable.mataje2,
                 R.drawable.mataje2));
