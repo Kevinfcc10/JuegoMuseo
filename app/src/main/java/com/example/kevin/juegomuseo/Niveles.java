@@ -22,18 +22,25 @@ public class Niveles extends AppCompatActivity {
         setContentView(R.layout.activity_niveles);
 
         CustomGrid adapter = new CustomGrid(Niveles.this, niveles, imageId);
-        grid=(GridView)findViewById(R.id.grid);
+        grid = (GridView) findViewById(R.id.grid);
         grid.setAdapter(adapter);
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(Niveles.this, "You Clicked at " +niveles[+ position], Toast.LENGTH_SHORT).show();
-                intent =  new Intent(Niveles.this,Nivel1.class);
+                Toast.makeText(Niveles.this, "You Clicked at " + niveles[position], Toast.LENGTH_SHORT).show();
 
-                startActivity(intent);
+                if (position == 0) {
+                    intent = new Intent(Niveles.this, Nivel1.class);
+                    startActivity(intent);
+                } else if (position == 1) {
+                    intent = new Intent(Niveles.this, Nivel2.class);
+                    startActivity(intent);
+                }
+
             }
         });
     }
+
 }
