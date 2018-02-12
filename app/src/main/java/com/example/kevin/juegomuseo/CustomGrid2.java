@@ -5,34 +5,28 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by Kevin on 27/1/2018.
+ * Created by Kevin on 12/2/2018.
  */
 
-public class CustomGrid extends BaseAdapter {
+public class CustomGrid2 extends BaseAdapter {
 
     private Context mContext;
-    private  String[] niveles;
     private  int[] Imageid;
 
-    public CustomGrid(Context c,String[] niveles,int[] Imageid ) {
-        mContext = c;
-        this.Imageid = Imageid;
-        this.niveles = niveles;
-    }
-
-    public CustomGrid(Context c,int[] Imageid ){
+    public CustomGrid2(Context c,int[] Imageid ){
         mContext = c;
         this.Imageid = Imageid;
     }
 
     @Override
     public int getCount() {
-        // TODO Auto-generated method stub
-        return niveles.length;
+
+        return Imageid.length;
     }
 
     @Override
@@ -56,10 +50,8 @@ public class CustomGrid extends BaseAdapter {
         if (convertView == null) {
 
             grid = new View(mContext);
-            grid = inflater.inflate(R.layout.activity_grid_single, null);
-            TextView textView = (TextView) grid.findViewById(R.id.grid_text);
-            ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image);
-            textView.setText(niveles[position]);
+            grid = inflater.inflate(R.layout.activity_grid_single2, null);
+            ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image1);
             imageView.setImageResource(Imageid[position]);
         } else {
             grid = (View) convertView;
@@ -67,4 +59,5 @@ public class CustomGrid extends BaseAdapter {
 
         return grid;
     }
+
 }
