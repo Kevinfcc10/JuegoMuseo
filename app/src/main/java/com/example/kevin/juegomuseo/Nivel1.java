@@ -24,7 +24,7 @@ public class Nivel1 extends AppCompatActivity {
         tucan = (ImageView) findViewById(R.id.paper);
         tucan.setTag("tucan");
         sahino = (ImageView) findViewById(R.id.paper2);
-        tucan.setTag("sahino");
+        sahino.setTag("sahino");
         mataje = (ImageView) findViewById(R.id.trash);
         mataje.setTag("mataje");
         score=0;
