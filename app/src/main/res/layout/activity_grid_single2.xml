@@ -8,8 +8,10 @@
     tools:context="com.example.kevin.juegomuseo.Grid_single2">
 
     <ImageView
+
         android:id="@+id/grid_image1"
-        android:layout_width="100dp"
-        android:layout_height="75dp"
-        android:background="@android:color/holo_blue_bright"></ImageView>
+        android:layout_width="125dp"
+        android:layout_height="75dp">
+
+    </ImageView>
 </RelativeLayout>
