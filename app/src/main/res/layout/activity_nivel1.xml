@@ -4,42 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_dark"
+    android:background="@drawable/safari3"
     tools:context="com.example.kevin.juegomuseo.Nivel1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
         android:layout_centerInParent="true"
-        android:text="Mew Mew"/>
+        android:text="Mew Mew"
+        android:textColor="@android:color/white" />
 
     <ImageView
         android:id="@+id/paper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/tucan3"
-        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="16dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/tucan3" />
+
     <ImageView
         android:id="@+id/paper2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/sahino"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_margin="16dp"/>
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/sahino" />
+
     <ImageView
         android:id="@+id/trash"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/mataje2"
-        android:layout_margin="16dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"/>
-
-
+        android:layout_alignLeft="@+id/paper2"
+        android:layout_alignStart="@+id/paper2"
+        android:layout_below="@+id/paper"
+        android:src="@drawable/mataje2" />
 
 
 </RelativeLayout>

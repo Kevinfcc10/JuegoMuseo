@@ -16,9 +16,9 @@ public class NivelN extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nivel_n);
 
-        CustomGrid2 adapter = new CustomGrid2(NivelN.this, imageId);
-        grid2=(GridView)findViewById(R.id.grid2);
-        grid2.setAdapter(adapter);
+        //CustomGrid2 adapter = new CustomGrid2(NivelN.this, imageId);
+        //grid2=(GridView)findViewById(R.id.grid2);
+        //grid2.setAdapter(adapter);
 
 
 
