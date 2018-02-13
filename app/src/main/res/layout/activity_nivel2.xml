@@ -34,27 +34,29 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/costa"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="128dp"
+        android:src="@drawable/costa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
         app:srcCompat="@color/colorPrimary" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/manglar"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_marginEnd="64dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="16dp"
+        android:src="@drawable/manglar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/costa"
         app:srcCompat="@color/colorAccent" />
 
     <Button
@@ -65,7 +67,7 @@
         android:layout_marginTop="8dp"
         android:text="Ok"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/manglar"
         android:layout_marginRight="8dp" />
 </android.support.constraint.ConstraintLayout>
 

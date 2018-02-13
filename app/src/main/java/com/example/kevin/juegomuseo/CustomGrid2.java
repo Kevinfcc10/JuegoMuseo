@@ -17,10 +17,12 @@ public class CustomGrid2 extends BaseAdapter {
 
     private Context mContext;
     private  int[] Imageid;
+    private  String[] tags;
 
-    public CustomGrid2(Context c,int[] Imageid ){
+    public CustomGrid2(Context c,int[] Imageid,String[] tags ){
         mContext = c;
         this.Imageid = Imageid;
+        this.tags=tags;
     }
 
     @Override
@@ -53,6 +55,7 @@ public class CustomGrid2 extends BaseAdapter {
             grid = inflater.inflate(R.layout.activity_grid_single2, null);
             ImageView imageView = (ImageView)grid.findViewById(R.id.grid_image1);
             imageView.setImageResource(Imageid[position]);
+            imageView.setTag(tags[position]);
         } else {
             grid = (View) convertView;
         }
