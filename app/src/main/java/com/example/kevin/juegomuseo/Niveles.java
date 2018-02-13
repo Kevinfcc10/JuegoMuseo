@@ -38,9 +38,11 @@ public class Niveles extends AppCompatActivity {
                     intent = new Intent(Niveles.this, Nivel2.class);
                     startActivity(intent);
                 }
-
+                else{
+                    intent = new Intent(Niveles.this, NivelN.class);
+                    startActivity(intent);
+                }
             }
         });
     }
-
 }
