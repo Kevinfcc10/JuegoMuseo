@@ -60,7 +60,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 KEY_REG_ECOSYSTEM + " TEXT,"+KEY_IMG_ECOSYSTEM + " TEXT,"+")";
         sqLiteDatabase.execSQL(CREATE_ANIMALS_TABLE);
         sqLiteDatabase.execSQL(CREATE_ECOSYSTEMS_TABLE);
-        addEcosistema(new Ecosistema(1,"Mataje","hsadjahskd","Oriente","mataje.png"));
+        addEcosistema(new Ecosistema(1,"Mataje","","Oriente","mataje.png"));
         addAnimal(new Animal(1,"Tucan","ave del mataje","tucan_mataje.png","1"));
 
     }
