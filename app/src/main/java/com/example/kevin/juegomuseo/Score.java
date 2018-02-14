@@ -56,7 +56,6 @@ public class Score extends AppCompatActivity {
             estrellas.setImageResource(R.drawable.estrella1);
         }
 
-
         /*compartirFb.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -70,6 +69,7 @@ public class Score extends AppCompatActivity {
             }
         });
         */
+
         if (AccessToken.getCurrentAccessToken() == null){
             compartirFb.setVisibility(4);
         }
