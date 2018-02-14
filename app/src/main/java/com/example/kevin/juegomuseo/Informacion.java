@@ -5,8 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.facebook.AccessToken;
 
 public class Informacion extends AppCompatActivity {
 
@@ -26,7 +28,17 @@ public class Informacion extends AppCompatActivity {
     }
 
     public void goNivel(View view){
-        Intent intent = new Intent(this, Niveles.class);
-        startActivity(intent);
+
+        if (AccessToken.getCurrentAccessToken() == null){
+            Intent intent = new Intent(this, Login.class);
+            startActivity(intent);
+            Toast.makeText(Informacion.this, "Inicie sesión con FB", Toast.LENGTH_SHORT).show();
+        }
+
+        else {
+            Intent intent = new Intent(this, Niveles.class);
+            startActivity(intent);
+        }
+
     }
 }

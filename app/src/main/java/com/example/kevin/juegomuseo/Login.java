@@ -109,6 +109,17 @@ public class Login extends AppCompatActivity {
     }
 
     public void goNiveles(View view){
+
+        if (AccessToken.getCurrentAccessToken() == null){
+            Toast.makeText(Login.this, "Inicie sesión con FB", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Intent intent = new Intent(this, Niveles.class);
+            startActivity(intent);
+        }
+    }
+
+    public void goInvitado(View view){
         Intent intent = new Intent(this, Niveles.class);
         startActivity(intent);
     }

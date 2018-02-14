@@ -13,8 +13,8 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 public class Niveles extends AppCompatActivity {
 
     GridView grid;
-    String[] niveles = {"Nivel 1", "Nivel 2","Nivel 3","Nivel 4","Nivel 5","Nivel 6"} ;
-    int[] imageId = { R.drawable.rana, R.drawable.perico, R.drawable.tortuga, R.drawable.delfin, R.drawable.mono, R.drawable.tigrillo};
+    String[] niveles = {"Nivel 1", "Nivel 2","Nivel 3","Nivel 4"} ;
+    int[] imageId = { R.drawable.perico, R.drawable.tortuga, R.drawable.delfin, R.drawable.tigrillo};
     private Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
