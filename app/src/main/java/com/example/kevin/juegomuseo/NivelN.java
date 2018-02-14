@@ -8,7 +8,7 @@ import android.widget.GridView;
 public class NivelN extends AppCompatActivity {
 
     GridView grid2;
-    int[] imageId = { R.drawable.rana, R.drawable.mataje, R.drawable.tortuga, R.drawable.delfin, R.drawable.sahino, R.drawable.chimborazo};
+    int[] imageId = { R.drawable.rana, R.drawable.mataje, R.drawable.tortuga, R.drawable.delfin, R.drawable.sahino};
     private Intent intent;
 
     @Override

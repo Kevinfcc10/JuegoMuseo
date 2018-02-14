@@ -3,6 +3,7 @@ package com.example.kevin.juegomuseo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,20 +23,24 @@ public class Score extends AppCompatActivity {
        Integer score = Integer.valueOf(message.split(",")[1]);
        String nivel = message.split(",")[0];
         TextView nivelText = (TextView) findViewById(R.id.textView13);
-        nivelText.setText(nivel);
+        nivelText.setText("Nivel "+nivel);
         TextView puntajeText = (TextView) findViewById(R.id.textViewPuntaje);
-        puntajeText.setText(Integer.valueOf(score));
+        puntajeText.setText(score+"");
         if(score>=70){
-            estrellas.setImageResource(R.drawable.estrella1);
+            estrellas.setImageResource(R.drawable.estrella3);
         }else if(score>=35&&score<70){
             estrellas.setImageResource(R.drawable.estrella2);
         }else{
-            estrellas.setImageResource(R.drawable.estrella3);
+            estrellas.setImageResource(R.drawable.estrella1);
         }
 
 
     }
 
+    public void irNiveles(View view){
+        Intent nivelesIntent=new Intent(this,Niveles.class);
+        startActivity(nivelesIntent);
+    }
 
 
 }

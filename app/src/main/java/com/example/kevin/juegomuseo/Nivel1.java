@@ -1,6 +1,7 @@
 package com.example.kevin.juegomuseo;
 
 import android.content.ClipData;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class Nivel1 extends AppCompatActivity {
     private ImageView tucan;
@@ -55,11 +58,12 @@ public class Nivel1 extends AppCompatActivity {
                 return true;
             }
         });
-
-
-
-
-
+    }
+    public void finalizarNivel(View view){
+        Intent scoreIntent=new Intent(this,Score.class);
+        String message = 1+","+score;
+        scoreIntent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(scoreIntent);
     }
 
 

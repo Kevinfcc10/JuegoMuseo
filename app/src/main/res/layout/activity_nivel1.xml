@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/safari3"
     tools:context="com.example.kevin.juegomuseo.Nivel1">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Mew Mew"
-        android:textColor="@android:color/white" />
 
     <ImageView
         android:id="@+id/paper"
@@ -21,7 +14,13 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_margin="16dp"
-        android:src="@drawable/tucan3" />
+        android:layout_marginEnd="108dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/tucan3"
+        app:layout_constraintEnd_toStartOf="@+id/paper2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/paper2"
@@ -30,16 +29,39 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_margin="16dp"
-        android:src="@drawable/sahino" />
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/sahino"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/paper"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/trash"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/paper2"
-        android:layout_alignStart="@+id/paper2"
+        android:layout_height="0dp"
         android:layout_below="@+id/paper"
-        android:src="@drawable/mataje2" />
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/mataje2"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paper" />
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="finalizarNivel"
+        android:paddingBottom="16dp"
+        android:text="Ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toLeftOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

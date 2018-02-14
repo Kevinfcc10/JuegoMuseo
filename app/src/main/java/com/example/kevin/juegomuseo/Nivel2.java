@@ -13,13 +13,14 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class Nivel2 extends AppCompatActivity {
 
 
     GridView grid1;
     int[] imageId = { R.drawable.garza, R.drawable.guacamayo, R.drawable.iguana};
     String[] tags={"garza","guacamayo","iguana"};
-    private Intent intent;
     private ImageView manglar;
     private ImageView costa;
     private Integer score;
@@ -53,6 +54,13 @@ public class Nivel2 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void finalizarNivel(View view){
+        Intent scoreIntent=new Intent(this,Score.class);
+        String message = 2+","+score;
+        scoreIntent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(scoreIntent);
     }
     private class TrashDragListener implements View.OnDragListener {
 
