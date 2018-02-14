@@ -33,7 +33,6 @@ public class Score extends AppCompatActivity {
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_score);
 
-        //asiganmos boton compartir
         compartirFb = findViewById(R.id.CompartirFb);
 
         callbackManager = CallbackManager.Factory.create();
