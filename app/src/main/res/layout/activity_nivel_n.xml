@@ -39,18 +39,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/bosque"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/bosque"
             app:srcCompat="@android:color/holo_blue_bright" />
 
         <ImageView
+            android:id="@+id/galapagos"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/galapagos"
             app:srcCompat="@android:color/holo_green_light" />
 
         <ImageView
+            android:id="@+id/paramo"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/paramo"
             app:srcCompat="?attr/colorAccent" />
 
     </LinearLayout>
@@ -61,6 +67,7 @@
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="460dp"
+        android:onClick="finalizarNivel"
         android:text="Ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
