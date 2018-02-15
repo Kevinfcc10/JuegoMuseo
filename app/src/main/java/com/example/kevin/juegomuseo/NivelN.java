@@ -128,7 +128,7 @@ public class NivelN extends AppCompatActivity {
     }
 
     public class ParamoDragListener implements View.OnDragListener {
-        private static final String TAG = "BosqueDragListener";
+        private static final String TAG = "ParamoDragListener";
 
         private boolean hit;
 
@@ -168,6 +168,7 @@ public class NivelN extends AppCompatActivity {
                             }
                             break;
                         default:
+                            score-=10;
                             break;
                     }
                     return true;
@@ -181,7 +182,6 @@ public class NivelN extends AppCompatActivity {
                             @Override
                             public void run() {
                                 draggedView1.setVisibility(View.VISIBLE);
-                                score-=10;
                             }
                         });
                     }
@@ -193,7 +193,7 @@ public class NivelN extends AppCompatActivity {
     }
 
     public class GalapagosDragListener implements View.OnDragListener {
-        private static final String TAG = "BosqueDragListener";
+        private static final String TAG = "GalapagosDragListener";
 
         private boolean hit;
 
@@ -233,6 +233,7 @@ public class NivelN extends AppCompatActivity {
                             }
                             break;
                         default:
+                            score-=10;
                             break;
                     }
                     return true;
@@ -246,7 +247,6 @@ public class NivelN extends AppCompatActivity {
                             @Override
                             public void run() {
                                 draggedView1.setVisibility(View.VISIBLE);
-                                score-=10;
                             }
                         });
                     }

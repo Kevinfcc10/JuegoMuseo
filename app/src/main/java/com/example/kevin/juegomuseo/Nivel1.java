@@ -92,11 +92,9 @@ public class Nivel1 extends AppCompatActivity {
                     return true;
                 case DragEvent.ACTION_DRAG_ENTERED:
                     Log.d(TAG, "onDrag: ACTION_DRAG_ENTERED");
-                    containerView.setImageResource(enterShape);
                     return true;
                 case DragEvent.ACTION_DRAG_EXITED:
                     Log.d(TAG, "onDrag: ACTION_DRAG_EXITED");
-                    containerView.setImageResource(normalShape);
                     return true;
                 case DragEvent.ACTION_DROP:
                     Log.d(TAG, "onDrag: ACTION_DROP");
@@ -111,6 +109,7 @@ public class Nivel1 extends AppCompatActivity {
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED2");
                             }
                             hit = true;
+                            score+=50;
                             break;
                         case R.id.paper2:
                             if(containerView.getTag().equals("tucan_mataje")){
@@ -122,8 +121,10 @@ public class Nivel1 extends AppCompatActivity {
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED4");
                             }
                             hit = true;
+                            score+=50;
                             break;
                         default:
+                            score-=10;
                             break;
                     }
                     draggedView.post(new Runnable() {
@@ -132,7 +133,6 @@ public class Nivel1 extends AppCompatActivity {
                             draggedView.setVisibility(View.GONE);
                         }
                     });
-                    score+=50;
                     return true;
                 case DragEvent.ACTION_DRAG_ENDED:
                     Log.d(TAG, "onDrag: ACTION_DRAG_ENDED");

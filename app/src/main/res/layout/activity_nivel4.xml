@@ -38,18 +38,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/prehistoria"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/prehistoria"
             app:srcCompat="@android:color/holo_blue_bright" />
 
         <ImageView
+            android:id="@+id/rio"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/rio"
             app:srcCompat="@android:color/holo_green_light" />
 
         <ImageView
+            android:id="@+id/chimborazo"
             android:layout_width="match_parent"
             android:layout_height="150dp"
+            android:src="@drawable/chimborazo"
             app:srcCompat="?attr/colorAccent" />
 
     </LinearLayout>
@@ -60,6 +66,7 @@
         android:layout_marginBottom="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="460dp"
+        android:onClick="finalizarNivel"
         android:text="Ok"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
