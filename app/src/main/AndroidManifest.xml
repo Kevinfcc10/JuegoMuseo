@@ -55,7 +55,8 @@
         <activity android:name=".Nivel1" />
         <activity android:name=".Nivel2" />
         <activity android:name=".Grid_single2" />
-        <activity android:name=".NivelN"></activity>
+        <activity android:name=".NivelN" />
+        <activity android:name=".Nivel4"></activity>
     </application>
 
 </manifest>
