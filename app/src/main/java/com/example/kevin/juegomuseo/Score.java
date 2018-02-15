@@ -82,9 +82,9 @@ public class Score extends AppCompatActivity {
             try {
                 if (ShareDialog.canShow(ShareLinkContent.class)) {
                     ShareLinkContent linkContent = new ShareLinkContent.Builder()
-                            .setContentTitle("Prueba Compartir Fb")
+                            .setContentTitle("Proyecto Aplicaciones Móviles")
                             .setContentDescription("mi puntaje es: ")
-                            .setContentUrl(Uri.parse("http://google.com"))
+                            .setContentUrl(Uri.parse("http://museogustavoorces.blogspot.com/p/dioramas_9.html"))
                             .build();
 
                     shareDialog.show(linkContent);
