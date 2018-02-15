@@ -16,18 +16,19 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class Nivel4 extends AppCompatActivity {
 
-    GridView grid2;
-    int[] imageId = { R.drawable.vicuna, R.drawable.mamut, R.drawable.delfin,R.drawable.tigre,R.drawable.puma,R.drawable.liebre};
+    GridView grid3;
+    int[] imageId = { R.drawable.vicuna, R.drawable.mamut, R.drawable.delfin,R.drawable.tigre,R.drawable.puma,R.drawable.liebre1};
     String []tags={"vicuna","mamut","delfin","tigre","puma","liebre"};
     private Intent intent;
-    private ImageView chimborazo;
-    private ImageView prehistorico;
-    private ImageView rio;
+
     private Integer score;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        ImageView chimborazo;
+        ImageView prehistorico;
+        ImageView rio;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nivel_n);
+        setContentView(R.layout.activity_nivel4);
         chimborazo =(ImageView) findViewById(R.id.chimborazo);
         chimborazo.setTag("chimborazo");
         prehistorico =(ImageView) findViewById(R.id.prehistoria);
@@ -35,13 +36,13 @@ public class Nivel4 extends AppCompatActivity {
         rio =(ImageView) findViewById(R.id.rio);
         rio.setTag("rio");
         CustomGrid2 adapter = new CustomGrid2(this, imageId,tags);
-        grid2=(GridView)findViewById(R.id.grid2);
-        grid2.setAdapter(adapter);
+        grid3=(GridView)findViewById(R.id.grid3);
+        grid3.setAdapter(adapter);
         score=0;
         chimborazo.setOnDragListener(new ChimborazoDragListener());
         prehistorico.setOnDragListener(new PrehistoricoDragListener());
         rio.setOnDragListener(new RioDragListener());
-        grid2.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+        grid3.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
             @Override
             public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
                 ClipData data = ClipData.newPlainText("", "");
@@ -100,7 +101,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.vicuna_liebre_chimborazo);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -111,7 +112,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         case "liebre":
@@ -126,7 +127,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.vicuna_liebre_chimborazo);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -137,7 +138,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         default:
@@ -203,7 +204,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.mamut_tigre_prehistoria);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -214,7 +215,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         case "tigre":
@@ -229,7 +230,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.mamut_tigre_prehistoria);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -240,7 +241,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         default:
@@ -306,7 +307,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.delfin_puma_rio);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -317,7 +318,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         case "puma":
@@ -332,7 +333,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }else{
                                 containerView.setImageResource(R.drawable.delfin_puma_rio);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -343,7 +344,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=33;
+                                score+=16;
                             }
                             break;
                         default:
