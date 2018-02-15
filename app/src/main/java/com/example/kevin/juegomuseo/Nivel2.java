@@ -92,8 +92,10 @@ public class Nivel2 extends AppCompatActivity {
                     Log.d(TAG, "onDrag: ACTION_DRAG_EXITED");
                     if(containerView.getTag().toString().contains("manglar") && (draggedView.getTag().equals("garza") || draggedView.getTag().equals("iguana"))){
                         draggedView1.setVisibility(View.VISIBLE);
+                        score-=10;
                     }else if(containerView.getTag().toString().contains("costa") && draggedView.getTag().equals("guacamayo")){
                         draggedView1.setVisibility(View.VISIBLE);
+                        score-=10;
                     }
                     return true;
                 case DragEvent.ACTION_DROP:
@@ -125,6 +127,7 @@ public class Nivel2 extends AppCompatActivity {
                                 score+=33;
                             }else{
                                 draggedView1.setVisibility(View.VISIBLE);
+                                score-=10;
                             }
                             hit = true;
                             break;
@@ -142,6 +145,7 @@ public class Nivel2 extends AppCompatActivity {
                                 score+=33;
                             }else {
                                 draggedView1.setVisibility(View.VISIBLE);
+                                score-=10;
                             }
                             break;
                         case "iguana":
@@ -170,6 +174,7 @@ public class Nivel2 extends AppCompatActivity {
                                 score+=33;
                             }else{
                                 draggedView1.setVisibility(View.VISIBLE);
+                                score-=10;
                             }
                             break;
                         default:
@@ -186,6 +191,7 @@ public class Nivel2 extends AppCompatActivity {
                             @Override
                             public void run() {
                                 draggedView1.setVisibility(View.VISIBLE);
+                                score-=10;
                             }
                         });
                     }
