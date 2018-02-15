@@ -51,7 +51,8 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".Login" />
 
-        <activity android:name=".Score" />
+        <activity android:name=".Score"
+            android:label="Puntuacion"/>
         <activity android:name=".Nivel1" />
         <activity android:name=".Nivel2" />
         <activity android:name=".Grid_single2" />

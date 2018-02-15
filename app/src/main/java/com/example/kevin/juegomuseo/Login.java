@@ -48,7 +48,6 @@ public class Login extends AppCompatActivity {
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-
                 Toast.makeText(Login.this,"Correcto", Toast.LENGTH_SHORT).show();
                 goNivelesFb();
             }

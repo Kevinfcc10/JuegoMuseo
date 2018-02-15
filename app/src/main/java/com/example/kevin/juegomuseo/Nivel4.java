@@ -17,8 +17,8 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 public class Nivel4 extends AppCompatActivity {
 
     GridView grid3;
-    int[] imageId = { R.drawable.vicuna, R.drawable.mamut, R.drawable.delfin,R.drawable.tigre,R.drawable.puma,R.drawable.liebre1};
-    String []tags={"vicuna","mamut","delfin","tigre","puma","liebre"};
+    int[] imageId = { R.drawable.vicuna, R.drawable.mamut, R.drawable.delfin,R.drawable.tigre,R.drawable.puma};
+    String []tags={"vicuna","mamut","delfin","tigre","puma"};
     private Intent intent;
 
     private Integer score;
@@ -101,7 +101,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }else{
                                 containerView.setImageResource(R.drawable.vicuna_liebre_chimborazo);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -112,7 +112,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }
                             break;
                         case "liebre":
@@ -127,7 +127,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }else{
                                 containerView.setImageResource(R.drawable.vicuna_liebre_chimborazo);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -138,7 +138,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }
                             break;
                         default:
@@ -215,7 +215,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }
                             break;
                         case "tigre":
@@ -230,7 +230,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }else{
                                 containerView.setImageResource(R.drawable.mamut_tigre_prehistoria);
                                 Log.d(TAG, "onDrag: ACTION_DRAG_EXITED3");
@@ -241,7 +241,7 @@ public class Nivel4 extends AppCompatActivity {
                                         draggedView.setVisibility(View.GONE);
                                     }
                                 });
-                                score+=16;
+                                score+=20;
                             }
                             break;
                         default:
