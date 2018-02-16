@@ -17,7 +17,7 @@
 
         <activity
             android:name=".Principal"
-            android:label="Principal">
+            android:label="Jugando con los Animales">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
