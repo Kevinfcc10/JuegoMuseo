@@ -25,6 +25,7 @@ public class Score extends AppCompatActivity {
     private Button compartirFb;
     ShareDialog shareDialog;
     CallbackManager callbackManager;
+    Integer score;
 
     @SuppressLint("WrongConstant")
     @Override
@@ -41,7 +42,7 @@ public class Score extends AppCompatActivity {
         final Intent intent = getIntent();
         String message = intent.getStringExtra(EXTRA_MESSAGE);
         estrellas = (ImageView) findViewById(R.id.imageView13);
-        Integer score = Integer.valueOf(message.split(",")[1]);
+        score = Integer.valueOf(message.split(",")[1]);
         String nivel = message.split(",")[0];
         TextView nivelText = (TextView) findViewById(R.id.textView13);
         nivelText.setText("Nivel "+nivel);
@@ -83,7 +84,7 @@ public class Score extends AppCompatActivity {
                 if (ShareDialog.canShow(ShareLinkContent.class)) {
                     ShareLinkContent linkContent = new ShareLinkContent.Builder()
                             .setContentTitle("Proyecto Aplicaciones Móviles")
-                            .setContentDescription("mi puntaje es: ")
+                            .setContentDescription("mi puntaje es: " + score)
                             .setContentUrl(Uri.parse("http://museogustavoorces.blogspot.com/p/dioramas_9.html"))
                             .build();
 
