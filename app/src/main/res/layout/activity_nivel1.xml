@@ -9,18 +9,16 @@
 
     <ImageView
         android:id="@+id/paper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_margin="16dp"
-        android:layout_marginEnd="108dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/tucan3"
+        android:src="@drawable/tucan11"
         app:layout_constraintEnd_toStartOf="@+id/paper2"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/paper2"
@@ -68,7 +66,7 @@
         android:id="@+id/textView9"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="69dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="24dp"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
