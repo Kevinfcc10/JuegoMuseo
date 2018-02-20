@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
@@ -19,11 +20,21 @@ public class Nivel1 extends AppCompatActivity {
     private ImageView mataje;
     private Integer score;
 
+    private TextView textView1;
+    private TextView textView2;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setFullScreen();
         setContentView(R.layout.activity_nivel1);
+
+        textView1 = (TextView) findViewById(R.id.textView9);
+        textView1.setText("tucan");
+        textView2 = (TextView) findViewById(R.id.textView10);
+        textView2.setText("sahino");
+
         tucan = (ImageView) findViewById(R.id.paper);
         tucan.setTag("tucan");
         sahino = (ImageView) findViewById(R.id.paper2);

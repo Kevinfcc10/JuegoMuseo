@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JuegoMuseo.iml" filepath="$PROJECT_DIR$/JuegoMuseo.iml" />
+      <module fileurl="file://E:\semestre2017B\moviles\proyectoFinal\JuegoMuseo.iml" filepath="E:\semestre2017B\moviles\proyectoFinal\JuegoMuseo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\HP\AndroidStudioProjects\JuegoMuseo\proyectoFinal.iml" filepath="C:\Users\HP\AndroidStudioProjects\JuegoMuseo\proyectoFinal.iml" />
     </modules>
   </component>
 </project>
