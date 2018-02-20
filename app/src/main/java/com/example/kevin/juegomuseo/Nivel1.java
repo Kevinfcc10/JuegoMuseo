@@ -2,6 +2,7 @@ package com.example.kevin.juegomuseo;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
@@ -22,7 +24,7 @@ public class Nivel1 extends AppCompatActivity {
 
     private TextView textView1;
     private TextView textView2;
-
+    private  String[] tags = {"tucan","sahino"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +56,7 @@ public class Nivel1 extends AppCompatActivity {
                 View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view);
                 view.startDrag(data, shadowBuilder, view, 0);
                 view.setVisibility(View.INVISIBLE);
+                Toast.makeText(Nivel1.this, "sahino", Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
@@ -66,6 +69,7 @@ public class Nivel1 extends AppCompatActivity {
                 View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(view);
                 view.startDrag(data, shadowBuilder, view, 0);
                 view.setVisibility(View.INVISIBLE);
+                Toast.makeText(Nivel1.this, "sahino", Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
